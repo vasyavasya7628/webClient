@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Webcamera</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div>hhh</div>
+		<p>Host: <input id="webSocketHost" type="text" value="localhost:1234" /></p>
+		<p>
+			<button onClick="initWebSocket();">Connect</button>
+			<button id="disconnectButton" onClick="stopWebSocket();" disabled>
+				Disconnect
+			</button>
+			<button onClick="checkSocket();">State</button>
+		</p>
+		<div id="container">
+			<video controls autoplay="true" id="videoElement"></video>
+		</div>
+		<p>Status: <input id="status" type="text" value="" readonly /></p>
+		<div></div>
+
+		<script src="scripts.js"></script>
+	</body>
+</html>
